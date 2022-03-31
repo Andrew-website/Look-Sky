@@ -31,18 +31,16 @@ body {
     background-position: center;
   }
   .father {
-    width: 85%;
+    width: 65%;
   }
 }
-
-/* start header */
-.father header {
+.father .link {
   position: absolute;
   top: 10%;
   display: flex;
   gap: 20px;
 }
-.father header .in,
+.father .link .in,
 .up {
   color: #fff;
   text-decoration: none;
@@ -50,21 +48,19 @@ body {
 .up {
   border-bottom: 2px solid #2196f3;
 }
-/* end header */
-/* start form */
 form {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
-.user,
-.mail,
-.pas {
+.Username,
+.Email,
+.Password {
   width: 100%;
 }
-form .user input,
-.mail input,
-.pas input {
+form .Username input,
+.Email input,
+.Password input {
   width: 100%;
   padding: 10px;
   background-color: #0000;
@@ -73,14 +69,16 @@ form .user input,
   outline: none;
   color: #fff;
 }
-form .user input:hover,
-.mail input:hover,
-.pas input:hover {
+form .Username input:hover,
+.Email input:hover,
+.Password input:hover {
   border-bottom: 2px solid #078fff;
   transition: 0.6s;
 }
 .checkbox {
   margin-top: 10px;
+  display: flex;
+  gap: 5px;
 }
 .checkbox label {
   font-size: 11px;
@@ -89,10 +87,9 @@ form .user input:hover,
 .Register {
   background-color: #2196f3a6;
   padding: 5px;
-  border-radius: 15px;
-  width: 150px;
+  border-radius: 25px;
+  padding: 11px 40px;
   border: none;
-  /* margin: 10px; */
   position: absolute;
   top: 80%;
   transform: translateX(-50%);
@@ -105,4 +102,3 @@ form .user input:hover,
   border-bottom: none;
   transition: 0.6s;
 }
-/* end form */
